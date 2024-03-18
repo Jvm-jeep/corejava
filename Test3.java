@@ -1,31 +1,22 @@
-package com.march14;
-import java.util.LinkedList;
-import java.util.Scanner;
+package com.march15;
+import java.util.Hashtable;
+import java.util.Map;
 
 
 public class Test3 {
 
-	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
-		int ch=0;
-		LinkedList<Employee>l1=new LinkedList<Employee>();
-		do {
-			System.out.println("LinkedList implementation");
-			System.out.println("Press 1:add data int list");
-			System.out.println("press 2. Display list");
-			System.out.println(" press 3. Update list");
-			System.out.println("press 4. Delete list");
-			System.out.println("press 5. Exit");
-			System.out.println("Enter Choice ");
-			ch=sc.nextInt();
-			switch(ch) {
-			case 1:
-				System.out.println("Enter the Employee Id");
-				int empid=sc.nextInt();
-				System.out.println("Enter");
-			}
+	public static  void main(String[] args) {
+		Hashtable<Integer,String>ht=new Hashtable<Integer,String>();
+		ht.put(23," Amit");
+		ht.put(25," Vijay");
+		ht.put(20," Ayush");	
+		ht.put(15," sujay");
+		ht.put(15," Ajay");
+		System.out.println(ht);
+		for(Map.Entry m:ht.entrySet()) {
+			System.out.println(m.getKey()+" "+m.getValue());
 		}
-		
+					
 	}
 
 }
