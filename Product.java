@@ -1,58 +1,49 @@
-package com.march15;
+package com.march19;
 
-public class Product implements Comparable<Product> {
+
+public class Product {
 	private int Pid;
-	public Product(int pid, String pname, double prating) {
-		super();
-		Pid = pid;
-		Pname = pname;
-		this.prating = prating;
-	}
-
-
-	private String Pname; 
-	private double prating;
-	
-
+	private String Pname;
+	private int Pprize;
+	private int Pquantity;
 	public int getPid() {
 		return Pid;
 	}
-
-
 	public void setPid(int pid) {
 		Pid = pid;
 	}
-
-
 	public String getPname() {
 		return Pname;
 	}
-
-
 	public void setPname(String pname) {
 		Pname = pname;
 	}
-
-
-	public double getPrating() {
-		return prating;
+	public int getPprize() {
+		return Pprize;
 	}
-
-
-	public void setPrating(double prating) {
-		this.prating = prating;
+	public void setPprize(int pprize) {
+		Pprize = pprize;
 	}
-
-
-	public static void main(String[] args) {
-		
+	public int getPquantity() {
+		return Pquantity;
 	}
-
-
+	public void setPquantity(int pquantity) {
+		Pquantity = pquantity;
+	}
+	public Product(int pid, String pname, int pprize, int pquantity) {
+		super();
+		Pid = pid;
+		Pname = pname;
+		Pprize = pprize;
+		Pquantity = pquantity;
+	}
+	public Product() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	@Override
-	public int compareTo(Product o) {
-		// TODO Auto-generated method stub
-		return 0;
+	public String toString() {
+		return "Product [Pid=" + Pid + ", Pname=" + Pname + ", Pprize=" + Pprize + ", Pquantity=" + Pquantity + "]";
 	}
-
 }
+	

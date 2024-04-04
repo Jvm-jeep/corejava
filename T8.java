@@ -25,3 +25,4 @@ Consumer<String>c1=x->System.out.println(x);
 	}
 
 
+
